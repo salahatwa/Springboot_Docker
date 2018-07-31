@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.docker.container.SpringbootDockerize1ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 4.458 s <<< FAILURE! - in com.docker.container.SpringbootDockerize1ApplicationTests
+contextLoads(com.docker.container.SpringbootDockerize1ApplicationTests)  Time elapsed: 0.018 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.docker.container.config.ResourceServerConfigure] from ClassLoader [sun.misc.Launcher$AppClassLoader@4aa298b7]
+Caused by: java.lang.NoClassDefFoundError: AuthenticationManagerBuilder
+Caused by: java.lang.ClassNotFoundException: AuthenticationManagerBuilder
+
